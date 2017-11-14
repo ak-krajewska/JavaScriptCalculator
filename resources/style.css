@@ -1,0 +1,89 @@
+body {
+    background-image: url(images/starry-sky-by-paree.jpg);
+}
+
+h1 {
+    font-family: 'Faster One', cursive;
+    color: black;
+}
+
+#calculator {
+  height: 410px;
+  width: 400px;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #9C29DE;
+  border: 2px solid black;
+  border-radius: 20px;
+  box-shadow: 7px 10px 34px 1px rgba(0, 0, 0, 0.68), inset -1px -6px 12px 0.1px #89847e;
+}
+
+
+#entrybox {
+  width: 85%;
+  height: 65px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #b4b39d;
+  border-radius: 6px;
+  background-color: #c3c2ab;
+}
+
+#entry {
+  margin-right: 10px;
+  font-size: 35px;
+}
+
+
+
+#buttons {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  display: inline-block;
+  width: 380px;
+  height: auto;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+button {
+  border-radius: 8px;
+  border: none;
+  /* background-color: #3a3a3a; */
+  margin: 0 4px 10px 8px;
+  height: 40px;
+  width: 75px;
+  box-shadow: 0px 3px 0px 0px #222121, inset -1px -3px 10px 1px #515151;
+}
+
+#equalButton {
+  position: absolute;
+  margin-left: 12px;
+  margin-top: -50px;
+  height: 90px;
+}
+
+#zeroButton {
+  width: 166px;
+}
+
+/*lisa frank color palette from http://www.colourlovers.com/palette/340445/lisa_frank?c=1 */
+
+
+.danger {
+    background-color: #EF2194;
+    /*lisa frank palette: trapper keeper*/
+}
+
+.action {
+    background-color: #00B5F7;
+    /*lisa frank palette: bright */
+}
+
+.number {
+    background-color: #FFDE10;
+    /*lisa frank palette: goodday */
+}
