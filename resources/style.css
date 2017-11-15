@@ -20,7 +20,7 @@ h1 {
 }
 
 
-#entrybox {
+#displayBox {
   width: 85%;
   height: 65px;
   margin-left: auto;
@@ -86,4 +86,12 @@ button {
 .number {
     background-color: #FFDE10;
     /*lisa frank palette: goodday */
+}
+
+.footer {
+  width: 400px;
+  margin-top: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  color: lightgray;
 }

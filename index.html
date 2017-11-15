@@ -1,93 +1,33 @@
-
-<!doctype html>
-<html lang="en">
-  <head>
-    <title>Calculator</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-      <link rel="stylesheet" href="resources/style.css" type="text/css">
-      <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
-  </head>
-  <body>
-      <div class="container">
-          <div id="calculator">
-              
-              <!-- Title -->
-              <div id="title" class="text-center">
-                <h1>CALCULATRON</h1>
-              </div>
-              
-              <!-- text entery box -->
-              
-                  
-                  <div id="entrybox" class="text-right">
-                    <div id="entry">
-                        <p id="answer">0</p>
-                      </div>
-                  </div>
-                  
-              
-              
-              
-              
-              
-              <!-- buttons -->
-              
-              <div id="buttons">
-                  
-              
-                <button type = "button" class = "btn danger"  value='ac'>AC</button>       
-                <button type = "button" class = "btn danger"  value='ce'>CE</button>
-                <button type = "button" class = "btn action" value='/'>&divide;</button>     
-                <button type = "button" class = "btn action" value='*'>x</button>
-                  
-                  
-               
-                <button type = "button" class ="btn number" value='7'>7</button>          
-                <button type = "button" class ="btn number" value='8'>8</button>
-                <button type = "button" class ="btn number" value='9'>9</button>
-                <button type = "button" class ="btn action" value='-'>-</button>
-                 
-                  
-                
-                <button type = "button" class ="btn number" value='4'>4</button>
-                <button type = "button" class ="btn number" value='5'>5</button>
-                <button type = "button" class ="btn number" value='6'>6</button>
-                <button type = "button" class = "btn action" value='+'>+</button>
-                  
-             
-                 
-                <button type = "button" class ="btn number" value='1'>1</button>  
-                <button type = "button" class ="btn number" value='2'>2</button>
-                <button type = "button" class ="btn number" value='3'>3</button>
-                <button type = "button" class='invisible'>N</button>
-                 
-                  
-                
-                <button type = "button" class ="btn number" id='zeroButton' value='0'>0</button>
-                <button type = "button" class ="btn action" value='.'>.</button>
-                <button type = "button" class ="btn action" id='equalButton' value='='>=</button>
-                  
-                  
-              </div>
-            <!-- end buttons -->
-              
-             <!--- end calculator --> 
-          </div>
-          <!-- end container -->
-          <div class="footer">
-          <p>Background image by <a href="https://www.flickr.com/photos/pareeerica/9616997915/">Paree</a>. Lisa Frank inspired palette by <a href="http://www.colourlovers.com/palette/340445/lisa_frank?c=1">goblinbabies</a>. </p>
-          </div>
-      </div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-  </body>
+<html>
+<h1>Calculatron</h1>
+    <div id='calc'>
+        <form>
+        <input type='text' id='display' disabled>
+            <br>
+            <input type='button' class= 'danger' value='AC' id='keys' onclick='addToScreen("clear")'>
+            <input type='button' class = 'danger' value='CE' id='keys' onclick='backspace()'>
+            <input type='button' value='/' id='keys' onclick='addToScreen("/")'>
+            <input type='button' value='*' id='keys' onclick='addToScreen("*")'>
+            <br>
+            <input type='button' value='7' id='keys' onclick='addToScreen("7")'>
+            <input type='button' value='8' id='keys' onclick='addToScreen("8")'>
+            <input type='button' value='9' id='keys' onclick='addToScreen("9")'>
+            <input type='button' value='-' id='keys' onclick='addToScreen("-")'>
+            <br>
+            <input type='button' value='4' id='keys' onclick='addToScreen("4")'>
+            <input type='button' value='5' id='keys' onclick='addToScreen("5")'>
+            <input type='button' value='6' id='keys' onclick='addToScreen("6")'>
+            <input type='button' value='+' id='keys' onclick='addToScreen("+")'>
+            <br>
+            <input type='button' value='1' id='keys' onclick='addToScreen("1")'>
+            <input type='button' value='2' id='keys' onclick='addToScreen("2")'>
+            <input type='button' value='3' id='keys' onclick='addToScreen("3")'>
+            <br> 
+            <input type='button' value='0' id='keys' onclick='addToScreen("0")'>
+            <input type='button' value='.' id='keys' onclick='addToScreen(".")'>
+            <input type='button' value='=' id='equals' onclick='equal("=")'>
+        </form>
+            <h3>JS Calculator</h3>
+            
+    </div>
 </html>

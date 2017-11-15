@@ -1,0 +1,95 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Calculator</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+      <link rel="stylesheet" href="resources/style.css" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+     
+  </head>
+  <body>
+      <div class="container">
+          <div id="calculator">
+              
+              <!-- Title -->
+              <div id="title" class="text-center">
+                <h1>CALCULATRON</h1>
+              </div>
+              
+              <!-- text entery box -->
+              
+                  
+                  <div id="displayBox" class="text-right">
+                    <div id="entry">
+                        <p id="answer">0</p>
+                      </div>
+                  </div>
+                  
+              
+              
+              
+              
+              
+              <!-- buttons -->
+              
+              <div id="buttons">
+                  
+              
+                <button type = 'button' class = 'btn danger'  value='ac' onclick='addtoscreen("ac")'>AC</button>       
+                <button type = 'button' class = 'btn danger'  value='ce' onclick='addtoscreen("ce")'>CE</button>
+                <button type = 'button' class = 'btn action' value='/' onclick='addtoscreen("/")'>&divide;</button>     
+                <button type = 'button' class = 'btn action' value='*' onclick='addtoscreen("*")'>x</button>
+                  
+                  
+               
+                <button type = 'button' class ='btn number' value='7' onclick='addtoscreen("7")'>7</button>          
+                <button type = 'button' class ='btn number' value='8' onclick='addtoscreen("8")'>8</button>
+                <button type = 'button' class ='btn number' value='9' onclick='addtoscreen("9")'>9</button>
+                <button type = 'button' class ='btn action' value='-' onclick='addtoscreen("-")'>-</button>
+                 
+                  
+                
+                <button type = 'button' class ='btn number' value='4' onclick='addtoscreen("4")'>4</button>
+                <button type = 'button' class ='btn number' value='5' onclick='addtoscreen("5")'>5</button>
+                <button type = 'button' class ='btn number' value='6' onclick='addtoscreen("6")'>6</button>
+                <button type = 'button' class = 'btn action' value='+' onclick='addtoscreen("+")'>+</button>
+                  
+             
+                 
+                <button type = 'button' class ='btn number' value='1' onclick='addtoscreen("1")'>1</button>  
+                <button type = 'button' class ='btn number' value='2' onclick='addtoscreen("2")'>2</button>
+                <button type = 'button' class ='btn number' value='3' onclick='addtoscreen("3")'>3</button>
+                <button type = 'button' class='invisible'>N</button>
+                 
+                  
+                
+                <button type = 'button' class ='btn number' id='zeroButton' value='0' onclick='addtoscreen("0")'>0</button>
+                <button type = 'button' class ='btn action' value='.' onclick='addtoscreen(".")'>.</button>
+                <button type = 'button' class ='btn action' id='equalButton' value='=' onclick='addtoscreen("=")'>=</button>
+                  
+                  
+              </div>
+            <!-- end buttons -->
+              
+             <!--- end calculator --> 
+          </div>
+          <!-- end container -->
+          <div class="footer">
+          <p>Background image by <a href="https://www.flickr.com/photos/pareeerica/9616997915/">Paree</a>. Lisa Frank inspired palette by <a href="http://www.colourlovers.com/palette/340445/lisa_frank?c=1">goblinbabies</a>. </p>
+          </div>
+      </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+      <script src="resources/main.js"></script>
+  </body>
+</html>
