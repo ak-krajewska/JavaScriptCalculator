@@ -1,33 +1,42 @@
 <html>
-<h1>Calculatron</h1>
-    <div id='calc'>
-        <form>
-        <input type='text' id='display' disabled>
-            <br>
-            <input type='button' class= 'danger' value='AC' id='keys' onclick='addToScreen("clear")'>
-            <input type='button' class = 'danger' value='CE' id='keys' onclick='backspace()'>
-            <input type='button' value='/' id='keys' onclick='addToScreen("/")'>
-            <input type='button' value='*' id='keys' onclick='addToScreen("*")'>
-            <br>
-            <input type='button' value='7' id='keys' onclick='addToScreen("7")'>
-            <input type='button' value='8' id='keys' onclick='addToScreen("8")'>
-            <input type='button' value='9' id='keys' onclick='addToScreen("9")'>
-            <input type='button' value='-' id='keys' onclick='addToScreen("-")'>
-            <br>
-            <input type='button' value='4' id='keys' onclick='addToScreen("4")'>
-            <input type='button' value='5' id='keys' onclick='addToScreen("5")'>
-            <input type='button' value='6' id='keys' onclick='addToScreen("6")'>
-            <input type='button' value='+' id='keys' onclick='addToScreen("+")'>
-            <br>
-            <input type='button' value='1' id='keys' onclick='addToScreen("1")'>
-            <input type='button' value='2' id='keys' onclick='addToScreen("2")'>
-            <input type='button' value='3' id='keys' onclick='addToScreen("3")'>
-            <br> 
-            <input type='button' value='0' id='keys' onclick='addToScreen("0")'>
-            <input type='button' value='.' id='keys' onclick='addToScreen(".")'>
-            <input type='button' value='=' id='equals' onclick='equal("=")'>
-        </form>
-            <h3>JS Calculator</h3>
-            
-    </div>
+    <head>
+        <link rel="stylesheet" href="resources/style.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+    </head>
+    <body>
+        
+        <div id='calc'>
+            <h1>Calculatron</h1>
+            <form>
+            <input type='text' id='display' disabled>
+                <br>
+                <input type='button' class= 'danger' value='AC' id='keys' onclick='addToScreen("ac")'>
+                <input type='button' class = 'danger' value='CE' id='keys' onclick='backspace()'>
+                <input type='button' class='action' value='/' id='keys' onclick='addToScreen("/")'>
+                <input type='button' class='action' value='*' id='keys' onclick='addToScreen("*")'>
+                <br>
+                <input type='button' value='7' id='keys' onclick='addToScreen("7")'>
+                <input type='button' value='8' id='keys' onclick='addToScreen("8")'>
+                <input type='button' value='9' id='keys' onclick='addToScreen("9")'>
+                <input type='button' class='action' value='-' id='keys' onclick='addToScreen("-")'>
+                <br>
+                <input type='button' value='4' id='keys' onclick='addToScreen("4")'>
+                <input type='button' value='5' id='keys' onclick='addToScreen("5")'>
+                <input type='button' value='6' id='keys' onclick='addToScreen("6")'>
+                <input type='button' class='action' value='+' id='keys' onclick='addToScreen("+")'>
+                <br>
+                <input type='button' value='1' id='keys' onclick='addToScreen("1")'>
+                <input type='button' value='2' id='keys' onclick='addToScreen("2")'>
+                <input type='button' value='3' id='keys' onclick='addToScreen("3")'>
+                
+                <br> 
+                <input type='button' value='0' id='keys' onclick='addToScreen("0")'>
+                <input type='button' value='.' id='keys' onclick='addToScreen(".")'>
+                <input type='button' class='action' value='=' id='equals' onclick='answer()'>
+            </form>
+                
+
+        </div>
+        <script src="resources/main.js"></script>
+    </body>
 </html>

@@ -5,70 +5,53 @@ body {
 h1 {
     font-family: 'Faster One', cursive;
     color: black;
+   
 }
 
-#calculator {
-  height: 410px;
-  width: 400px;
+#calc {
+  height: 250x;
+  width: 350px;
   margin-top: 10%;
   margin-left: auto;
   margin-right: auto;
   background-color: #9C29DE;
   border: 2px solid black;
+  padding: 20px;
   border-radius: 20px;
-  box-shadow: 7px 10px 34px 1px rgba(0, 0, 0, 0.68), inset -1px -6px 12px 0.1px #89847e;
+  box-shadow: 0px 0px 3px 6px darkgray;
 }
 
 
-#displayBox {
-  width: 85%;
-  height: 65px;
-  margin-left: auto;
-  margin-right: auto;
-  border: 2px solid #b4b39d;
-  border-radius: 6px;
-  background-color: #c3c2ab;
+#display {
+    margin-bottom: 20px;
+    height: 50px;
+    width: 17em;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px black;
+    text-align: right;
+    font: 20px bold;
 }
 
-#entry {
-  margin-right: 10px;
-  font-size: 35px;
+#keys {
+    width: 70px;
+    height: 50px;
+    margin: 4px;
+    box-shadow: 0px 0px 2px 1px black;
+    border-radius: 3px;
+    outline: none;
+}
+
+#equals {
+    width: 70px;
+    height: 80px;
+    margin: -30px 4px 4px 88px;
+    box-shadow: 0px 0px 2px 1px black;
+    border-radius: 3px;
+    outline: none;
 }
 
 
-
-#buttons {
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff;
-  position: absolute;
-  display: inline-block;
-  width: 380px;
-  height: auto;
-  margin-top: 15px;
-  margin-left: 15px;
-}
-
-button {
-  border-radius: 8px;
-  border: none;
-  /* background-color: #3a3a3a; */
-  margin: 0 4px 10px 8px;
-  height: 40px;
-  width: 75px;
-  box-shadow: 0px 3px 0px 0px #222121, inset -1px -3px 10px 1px #515151;
-}
-
-#equalButton {
-  position: absolute;
-  margin-left: 12px;
-  margin-top: -50px;
-  height: 90px;
-}
-
-#zeroButton {
-  width: 166px;
-}
 
 /*lisa frank color palette from http://www.colourlovers.com/palette/340445/lisa_frank?c=1 */
 
