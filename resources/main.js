@@ -95,6 +95,7 @@ function backspace(){
     //if you delete an operator, check if the next "chunk" has a decimal and reset the flag to true
     if (allowedOperators.indexOf(num.charAt(len)) != -1){ 
         console.log("deleting an operator");
+        //look if I just prevented them from adding the duplicative decimal in the first place, I wouldn't need to do this check. or wait. no, damn it. I still have to check as I type
     }
     
     var newNum = num.substring(0, len);
