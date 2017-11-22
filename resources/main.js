@@ -1,11 +1,12 @@
+//it allows a decimal at the end of a chunk that already has a decimal if you just did a sum so oops
+//I'd like to allow one leading zero but only if it is followed by a period
+//one way to do that is to automatically enter a zero before a decimal if it's the first item, or the first item following an operator
+
 //global variables
 var box = document.getElementById('display');
 var allowedNums = ["0","1","2","3","4","5","6","7","8","9"];
 var allowedOperators = ["+", "-", "*", "/"];
 var hasDecimal = false; //toggle for tracking if a chunk has a decimal
-
-
-//I'd like to allow one leading zero but only if it is followed by a period
 
 function addToScreen(x){    
     //you want to enter a number
@@ -13,7 +14,7 @@ function addToScreen(x){
                 console.log("It's a number, so you can enter it");
                 //no leading zero, no zero directly after an operator
                 if (((x == 0) && (box.value.length == 0)) || (x == 0) && (allowedOperators.indexOf(box.value.charAt(box.value.length - 1)) != -1) ){
-                    alert("no leading zero");
+                console.log("no leading zero allowed");
                 } else 
                     box.value += x;
             }
@@ -23,7 +24,6 @@ function addToScreen(x){
     if (x == "."){
         if (hasDecimal == true){
         console.log("already has a decimal");
-        alert("stop dots!");
         } else if (hasDecimal == false){
             hasDecimal = true;
             console.log("a decimal point has been added");
@@ -37,7 +37,6 @@ function addToScreen(x){
         console.log(x + " is an operator");
         if (allowedNums.indexOf(box.value.charAt(box.value.length - 1)) === -1){
            console.log("Two mathematical operators in a row are not allowed");
-            alert("A mathematical operator can only follow a number");
             } else {
                 hasDecimal = false;
                 box.value += x;
@@ -57,7 +56,6 @@ function answer(){
            console.log("can't end with a numerical operator or a decimal so we'll trim it");
             box.value = box.value.substring(0, box.value.length - 1);    
             } 
-    
     
     x = box.value;
     x = eval(x); //built in javascript function that evaluates string as a number
