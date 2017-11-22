@@ -11,11 +11,10 @@ function parseAString(string, dividers){ //takes a string, and an array of accep
 }
 
 var regex = /[\+*/-]/;
-var str = "1+2-3*4/5";
+var str = "12.3+20-3.7*4/5";
 //console.log(str.split(regex));
 
-var str2 = "14+17+19*20";
-//console.log(str2.split("+"));
+
 
 //travesre the array
 //for each item in the array check if it has a decimal
@@ -24,3 +23,12 @@ var str2 = "14+17+19*20";
 
 var parsedArr = str.split(regex);
 console.log(parsedArr);
+var decimal = ".";
+
+//traverse the parsed array and check for a decimal -- this works
+for (var i = 0; i < parsedArr.length; i++){
+    if (parsedArr[i].indexOf(".") !== -1){
+        console.log(parsedArr[i] + " contains a decimal");
+    };
+};
+

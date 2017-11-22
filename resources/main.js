@@ -92,14 +92,35 @@ function backspace(){
         console.log("deleteing a decimal");
         hasDecimal = false;
         }
+    
+    var newNum = num.substring(0, len);
+    //untoggle the decimal flag if what your're deleting is a decimal
+    
     //if you delete an operator, check if the next "chunk" has a decimal and reset the flag to true
     if (allowedOperators.indexOf(num.charAt(len)) != -1){ 
         console.log("deleting an operator");
         //look if I just prevented them from adding the duplicative decimal in the first place, I wouldn't need to do this check. or wait. no, damn it. I still have to check as I type
+        //set flag to false
+        hasDecimal = false;
+        
+        //parse the remaining string
+        var regex = /[\+*/-]/;
+        console.log("newNum is " + newNum)
+        var parsedArr = newNum.split(regex);
+        console.log(parsedArr); 
+        console.log("the last item is " + parsedArr[parsedArr.length -1]);
+        
+        //evaluate the last item in the array for a decimal
+        if (parsedArr[parsedArr.length -1].indexOf(".") !== -1){
+            console.log(parsedArr[parsedArr.length -1] + " contains a decimal");
+            //if the last item in the array has a decimal, set the flag to true
+            hasDecimal = true;
+            
+        }
+        
+        
+        
     }
-    
-    var newNum = num.substring(0, len);
-    //untoggle the decimal flag if what your're deleting is a decimal
     
     box.value = newNum;
 }
