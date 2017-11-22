@@ -1,6 +1,4 @@
-//I'd like to allow one leading zero but only if it is followed by a period
-//I'd like to allow one leading zero but only if it is followed by a period
-//one way to do that is to automatically enter a zero before a decimal if it's the first item, or the first item following an operator
+//I'd like to create a debug mode where the console logs are active
 
 //global variables
 var box = document.getElementById('display');
@@ -27,7 +25,13 @@ function addToScreen(x){
         } else if (hasDecimal == false){
             hasDecimal = true;
             console.log("a decimal point has been added");
-            box.value +=x;
+            //if you are following an operator or the box is empty
+            if (box.value == "" || allowedOperators.indexOf(box.value.charAt(box.value.length - 1)) !== -1) {
+                //add "0." instead of "."
+                box.value += "0.";
+                } else {
+                    box.value +=x;
+                }
         }
     }
     
