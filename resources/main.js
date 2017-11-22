@@ -1,4 +1,4 @@
-//it allows a decimal at the end of a chunk that already has a decimal if you just did a sum so oops
+//I'd like to allow one leading zero but only if it is followed by a period
 //I'd like to allow one leading zero but only if it is followed by a period
 //one way to do that is to automatically enter a zero before a decimal if it's the first item, or the first item following an operator
 
@@ -61,6 +61,14 @@ function answer(){
     x = eval(x); //built in javascript function that evaluates string as a number
     box.value = x;
     hasDecimal = false;
+    
+    //find out if x contains a decimal
+    if (box.value.includes(".") == true){
+            console.log(x + " , which is the answer, contains a decimal");
+            //if the last item in the array has a decimal, set the flag to true
+            hasDecimal = true; 
+        }
+    
     //probably add some rounding
     }
 
