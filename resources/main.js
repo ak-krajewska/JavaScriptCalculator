@@ -1,7 +1,5 @@
 //I'd like to create a debug mode where the console logs are active
 
-
-
 //global variables
 var box = document.getElementById('display');
 var allowedNums = ["0","1","2","3","4","5","6","7","8","9"];

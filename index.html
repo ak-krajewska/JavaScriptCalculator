@@ -3,40 +3,45 @@
         <title>Calculatron</title>
         <link rel="stylesheet" href="resources/style.css" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nova+Mono" rel="stylesheet">
     </head>
     <body>
         
         <div id='calc'>
-            <h1>Calculatron</h1>
-            <form>
-            <input type='text' id='display' disabled>
-                <br>
-                <input type='button' class= 'danger' value='AC' id='keys' onclick='addToScreen("ac")'>
-                <input type='button' class = 'danger' value='CE' id='keys' onclick='backspace()'>
-                <input type='button' class='action' value='/' id='keys' onclick='addToScreen("/")'>
-                <input type='button' class='action' value='*' id='keys' onclick='addToScreen("*")'>
-                <br>
-                <input type='button' value='7' id='keys' onclick='addToScreen("7")'>
-                <input type='button' value='8' id='keys' onclick='addToScreen("8")'>
-                <input type='button' value='9' id='keys' onclick='addToScreen("9")'>
-                <input type='button' class='action' value='-' id='keys' onclick='addToScreen("-")'>
-                <br>
-                <input type='button' value='4' id='keys' onclick='addToScreen("4")'>
-                <input type='button' value='5' id='keys' onclick='addToScreen("5")'>
-                <input type='button' value='6' id='keys' onclick='addToScreen("6")'>
-                <input type='button' class='action' value='+' id='keys' onclick='addToScreen("+")'>
-                <br>
-                <input type='button' value='1' id='keys' onclick='addToScreen("1")'>
-                <input type='button' value='2' id='keys' onclick='addToScreen("2")'>
-                <input type='button' value='3' id='keys' onclick='addToScreen("3")'>
-                
-                <br> 
-                <input type='button' value='0' id='keys' onclick='addToScreen("0")'>
-                <input type='button' value='.' id='keys' onclick='addToScreen(".")'>
-                <input type='button' class='action' value='=' id='equals' onclick='answer()'>
-            </form>
-                
+            <div id='innercalc'>
+                <h1>Calculatron</h1>
+                <form>
+                <input type='text' id='display' disabled>
+                    <br>
+                    <input type='button' class= 'danger keys' value='AC' onclick='addToScreen("ac")'>
+                    <input type='button' class = 'danger keys' value='CE' onclick='backspace()'>
+                    <input type='button' class='action keys' value='/' onclick='addToScreen("/")'>
+                    <input type='button' class='action keys' value='*' onclick='addToScreen("*")'>
+                    <br>
+                    <input type='button' value='7' class = 'keys' onclick='addToScreen("7")'>
+                    <input type='button' value='8' class = 'keys' onclick='addToScreen("8")'>
+                    <input type='button' value='9' class = 'keys' onclick='addToScreen("9")'>
+                    <input type='button' class='action keys' value='-' onclick='addToScreen("-")'>
+                    <br>
+                    <input type='button' value='4' class = 'keys' onclick='addToScreen("4")'>
+                    <input type='button' value='5' class = 'keys' onclick='addToScreen("5")'>
+                    <input type='button' value='6' class = 'keys' onclick='addToScreen("6")'>
+                    <input type='button' class='action keys' value='+' onclick='addToScreen("+")'>
+                    <br>
+                    <input type='button' value='1' class = 'keys' onclick='addToScreen("1")'>
+                    <input type='button' value='2' class = 'keys' onclick='addToScreen("2")'>
+                    <input type='button' value='3' class = 'keys' onclick='addToScreen("3")'>
 
+                    <br> 
+                    <input type='button' value='0' id='zero' onclick='addToScreen("0")'>
+                    <input type='button' value='.' class  = 'keys' onclick='addToScreen(".")'>
+                    <input type='button' class='action' value='=' id='equals' onclick='answer()'>
+                </form>
+            </div>
+
+        </div>
+        <div class='footer'>
+        Background image by <a href="https://www.flickr.com/photos/pareeerica/9616997915/">Paree</a>. Lisa Frank inspired palette by <a href="http://www.colourlovers.com/palette/340445/lisa_frank?c=1">goblinbabies</a>. 
         </div>
         <script src="resources/main.js"></script>
     </body>
